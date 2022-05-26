@@ -1,0 +1,16 @@
+package disp;
+
+import java.io.IOException;
+
+public class Main {
+	public static void main(String[]args) throws IOException{
+		Controller cont = new Controller();
+		try {
+			String path = "C:\\TEMP";
+			String nome = "steamCharts.csv";
+			cont.rd(path,nome);
+			}catch(Exception e){
+			System.out.println(e);
+			}
+	}
+}
